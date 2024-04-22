@@ -29,8 +29,11 @@ export const Profile = styled.div`
         width: 150px;
         font-size: 14px;
 
-        > a {
+        > a, button {
+            border: none;
+            background: none;
             font-weight: bold;
+            text-align: left;
             color: ${({ theme }) => theme.COLORS.WHITE3};
             > span {
                 color: ${({ theme }) => theme.COLORS.GRAY3};

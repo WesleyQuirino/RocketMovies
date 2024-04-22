@@ -49,10 +49,12 @@ export const Rating = styled.div`
     svg {
         font-size: 20px;
         color: ${({ theme }) => theme.COLORS.PINK};
-        fill: ${({ theme }) => theme.COLORS.PINK};
     }
 
-    svg:nth-last-child(1){
+    .fill{
+        fill: ${({ theme }) => theme.COLORS.PINK};
+    }
+    .fill-transparent{
         fill: transparent;
     }
 `;

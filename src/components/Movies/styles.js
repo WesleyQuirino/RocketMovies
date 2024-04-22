@@ -9,6 +9,11 @@ export const Container = styled.div`
     border-radius: 20px;
     background-color: rgba(255, 133, 155, 0.05);
 
+    a{
+        font-style: none;
+        color: inherit;
+    }
+
     > footer {
         display: flex;
         gap: 8px;
@@ -21,10 +26,12 @@ export const Rating = styled.div`
     
     svg {
         color: ${({ theme }) => theme.COLORS.PINK};
-        fill: ${({ theme }) => theme.COLORS.PINK};
     }
 
-    svg:nth-last-child(1){
+    .fill{
+        fill: ${({ theme }) => theme.COLORS.PINK};
+    }
+    .fill-transparent{
         fill: transparent;
     }
 `;
